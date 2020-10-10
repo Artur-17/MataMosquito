@@ -1,0 +1,64 @@
+:root{
+    --white: #fff;
+}
+
+html {
+    cursor: url(../Imagens/mata_mosca.png) 30 30, auto;
+}
+
+body {
+    background-image: url(../Imagens/fundo.jpg);
+    background-repeat: repeat-x;
+    background-size: 1920px 1080px;
+}
+
+
+.mosquito1 {
+    height: 50px;
+    width: 50px;
+}
+
+.mosquito2 {
+    height: 70px;
+    width: 70px;
+}
+
+.mosquito3 {
+    height: 90px;
+    width: 90px;
+}
+
+/* Não tinha necessiade de implementar o lado A, mas para ficar organizado deixei*/
+
+.ladoA{
+    transform: scaleX(1);
+}
+
+.ladoB{
+    transform: scaleX(-1);
+}
+
+.painel {
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+
+    /* deixar grudado no bottom e na esquerda*/
+
+    left: 0px;
+    bottom: 0px;
+
+    border-top: solid 1px var(--white);
+    background-color: var(--white);
+    opacity: 0.7;
+}
+
+.vidas {
+    float: left;
+}
+
+.cronometro {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
